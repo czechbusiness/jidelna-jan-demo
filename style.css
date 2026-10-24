@@ -92,3 +92,23 @@
   .nav a:not(.brand){font-size:9.8px;letter-spacing:.07em}
   .hero h1,.pagehero h1{font-size:35px}
 }
+
+/* FINAL NEXUS PATCH — crop, phone, functional week tabs */
+.phone-link{color:inherit;text-decoration:none;font-weight:inherit}.contactcard .big .phone-link,.footer .phone-link{color:inherit}.phone-link:hover{text-decoration:underline;text-underline-offset:3px}
+.gridgallery .gcard img{object-fit:cover;object-position:center center}
+.gridgallery .gcard img.crop-platter{object-position:center 42%}
+.gridgallery .gcard img.crop-fruit{object-position:center 38%}
+.gridgallery .gcard img.crop-building{object-position:center 52%}
+.week-tabs{display:flex;gap:34px;border-bottom:1px solid var(--line);margin-bottom:28px;overflow:auto}
+.week-tab{appearance:none;border:0;background:transparent;padding:16px 4px 12px;font:700 16px Arial,Helvetica,sans-serif;color:var(--ink);cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.week-tab.on{color:var(--red);border-bottom-color:var(--red)}
+.week-panel[hidden]{display:none!important}.week-panel{animation:weekFade .18s ease}
+@keyframes weekFade{from{opacity:.45;transform:translateY(4px)}to{opacity:1;transform:none}}
+.next-source-row{color:#5f574f;font-style:italic;background:#fcfaf7}
+.next-week-note{margin-top:18px;padding:16px 18px;border-radius:8px;background:#fff7f4;border:1px solid #f1d5dc;display:flex;gap:8px;flex-direction:column}
+.next-week-note strong{color:var(--red);font-family:Georgia,"Times New Roman",serif;font-size:20px}
+@media(max-width:700px){.week-tabs{gap:26px;margin-bottom:22px}.week-tab{font-size:15px;padding:14px 4px 10px}.next-week-table{min-width:0}.next-week-table th:nth-child(2),.next-week-table th:nth-child(4),.next-week-table th:nth-child(5){display:none}.next-week-table .next-source-row{display:table-cell!important;font-size:13px;line-height:1.45}.next-week-table .day{width:98px;min-width:98px}}
+
+/* FINAL CREATOR CREDIT */
+.creator-credit{text-align:center;margin-top:12px;padding:10px 16px 0;color:#777;font-size:10.5px;letter-spacing:.02em}.creator-credit a{color:#aaa;text-decoration:none}.creator-credit a:hover{text-decoration:underline;text-underline-offset:3px}.footer .creator-credit{border-top:1px solid #2b2b2b;margin-top:12px;padding-top:12px}.standalone-credit{background:#151515;color:#888;padding:14px 16px;margin:0}.standalone-credit a{color:#aaa}
+@media(max-width:700px){.creator-credit{font-size:10px;padding-bottom:4px}}
